@@ -1,0 +1,131 @@
+.crazyPink li.ct-series-0:before {
+    background-color: red;
+    border-color: red;
+}
+
+.crazyPink li.ct-series-1:before {
+    background-color: blue;
+    border-color: blue;
+}
+
+.crazyPink li.ct-series-2:before {
+    background-color: gold;
+    border-color: gold;
+}
+
+.crazyPink li.inactive:before {
+    background-color: transparent;
+}
+
+.crazyPink ~ svg .ct-series-a .ct-line, .crazyPink ~ svg .ct-series-a .ct-point {
+    stroke: #ff0000;
+}
+
+.crazyPink ~ svg .ct-series-b .ct-line, .crazyPink ~ svg .ct-series-b .ct-point {
+    stroke: #0000ff;
+}
+
+.crazyPink ~ svg .ct-series-c .ct-line, .crazyPink ~ svg .ct-series-c .ct-point {
+    stroke: gold;
+}
+
+.ct-legend {
+    z-index: 10;
+    list-style: none;
+    line-height: 12px;
+    margin: 0 0 10px 0;
+}
+
+.ct-series-a .ct-bar {
+    /* The width of your bars */
+    stroke-width: 15px;
+    stroke: red !important;
+}
+
+.ct-series-b .ct-bar {
+    /* The width of your bars */
+    stroke-width: 15px;
+    stroke: blue !important;
+}
+
+.ct-series-c .ct-bar {
+    /* The width of your bars */
+    stroke-width: 15px;
+    stroke: gold !important;
+}
+
+li.ct-series-0, li.ct-series-1, li.ct-series-2{
+    position: relative;
+    padding-left: 23px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.ct-legend li:before {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: -4px;
+    content: '';
+    border: 3px solid transparent;
+    border-radius: 2px;
+}
+
+/*.ct-chart-bar {*/
+    /*padding: 0 0 70px 0 !important;*/
+/*}*/
+
+.chartist-tooltip {
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
+    min-width: 5em;
+    padding: .5em;
+    background: #F4C63D;
+    color: #453D3F;
+    font-family: Oxygen,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    text-align: center;
+    pointer-events: none;
+    z-index: 1;
+    -webkit-transition: opacity .2s linear;
+    -moz-transition: opacity .2s linear;
+    -o-transition: opacity .2s linear;
+    transition: opacity .2s linear; }
+.chartist-tooltip:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top-color: #F4C63D; }
+.chartist-tooltip.tooltip-show {
+    opacity: 1; }
+
+.ct-area, .ct-line, .ct-bar {
+    pointer-events: none; }
+
+.ct-axis-title{
+
+}
+
+.ct-double-octave:before {
+    padding-bottom: 30% !important;
+}
+
+
+
+/*.ct-chart-bar .ct-label.ct-horizontal.ct-end {*/
+    /*white-space: nowrap;*/
+    /*transform: rotate(33deg);*/
+    /*transform-origin: -6% 0;*/
+    /*text-align: right;*/
+    /*max-height: 1.5em;*/
+    /*min-width: 100px;*/
+    /*max-width: 100px;*/
+/*}*/
